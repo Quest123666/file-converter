@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="本地文件格式转换工具：图片、PDF、文档、表格、音视频，全部在浏览器内完成，文件不上传。"
+    />
+    <title>File Converter · 本地文件转换</title>
+    <script>
+      try {
+        const stored = localStorage.getItem('fc-theme')
+        const dark = stored ? stored === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (dark) document.documentElement.classList.add('dark')
+      } catch {
+        /* 忽略隐私模式下的存储异常 */
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
