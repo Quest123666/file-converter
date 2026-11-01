@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
+<<<<<<< HEAD
     "tsBuildInfoFile": "./.tsbuild/tsconfig.node.tsbuildinfo",
+=======
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+>>>>>>> e91bacc7a27420f07b6377af82ee5c8b9ce9e940
     "target": "es2023",
     "lib": ["ES2023"],
     "types": ["node"],
